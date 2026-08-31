@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mon ❤️</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:linear-gradient(135deg,#fffaf7,#fdf1f1);
+    font-family:'Poppins',sans-serif;
+}
+
+.card{
+    width:100%;
+    max-width:760px;
+    background:#ffffff;
+    border-radius:28px;
+    padding:55px 45px;
+    text-align:center;
+    position:relative;
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.08);
+    animation:fadeIn 1.2s ease;
+}
+
+.corner{
+    position:absolute;
+    color:#d8a7a7;
+    font-size:28px;
+}
+
+.tl{top:18px;left:18px;}
+.tr{top:18px;right:18px;}
+.bl{bottom:18px;left:18px;}
+.br{bottom:18px;right:18px;}
+
+.icon-circle{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#fdf0f0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.icon-circle i{
+    font-size:38px;
+    color:#b76e79;
+}
+
+.title{
+    font-family:'Great Vibes',cursive;
+    font-size:4rem;
+    color:#b76e79;
+    font-weight:400;
+}
+
+.name{
+    font-size:2rem;
+    color:#555;
+    margin-top:5px;
+    font-weight:500;
+}
+
+.date{
+    margin-top:15px;
+    color:#888;
+    letter-spacing:1px;
+    font-size:0.95rem;
+}
+
+.divider{
+    width:90px;
+    height:2px;
+    background:#e7c8c8;
+    margin:25px auto;
+}
+
+.message{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.45rem;
+    line-height:1.9;
+    color:#555;
+    max-width:580px;
+    margin:auto;
+}
+
+.highlight{
+    color:#b76e79;
+    font-weight:600;
+}
+
+.footer{
+    margin-top:35px;
+    color:#666;
+}
+
+.footer i{
+    color:#c86b85;
+    margin:0 4px;
+}
+
+.signature{
+    margin-top:12px;
+    color:#b76e79;
+    font-weight:600;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+
+    .card{
+        padding:40px 25px;
+    }
+
+    .title{
+        font-size:3rem;
+    }
+
+    .name{
+        font-size:1.6rem;
+    }
+
+    .message{
+        font-size:1.2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="corner tl"><i class="fa-solid fa-leaf"></i></div>
+    <div class="corner tr"><i class="fa-solid fa-leaf"></i></div>
+    <div class="corner bl"><i class="fa-solid fa-leaf"></i></div>
+    <div class="corner br"><i class="fa-solid fa-leaf"></i></div>
+
+    <div class="icon-circle">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <h1 class="title">Happy Birthday</h1>
+
+    <div class="name">Mon</div>
+
+    <div class="date">
+        <i class="fa-regular fa-calendar"></i>
+        31 August
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="message">
+        Dear Mom,
+        <br><br>
+
+        Thank you for every prayer, every sacrifice, every lesson,
+        and every moment of love you have given throughout my life.
+
+        <br><br>
+
+        Your kindness, patience, and strength have always been a source
+        of comfort and inspiration for our family.
+
+        <br><br>
+
+        <span class="highlight">
+            May Allah bless you with good health, happiness,
+            peace, and countless beautiful memories.
+        </span>
+
+        <br><br>
+
+        You are the heart of our home and one of the greatest blessings
+        in my life.
+    </div>
+
+    <div class="footer">
+        <i class="fa-solid fa-heart"></i>
+        With Love
+        <i class="fa-solid fa-heart"></i>
+
+        <div class="signature">
+            Your Son
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
