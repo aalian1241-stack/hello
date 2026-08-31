@@ -3,15 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Mon ❤️</title>
+
+<title>Happy Birthday Nazia Sheikh</title>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -23,113 +25,88 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:20px;
-    background:linear-gradient(135deg,#fffaf7,#fdf1f1);
+    overflow:hidden;
     font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fffaf7,#fdf1f1,#fff8f0);
 }
+
+/* Soft Animated Background */
+
+.bg-circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.4;
+    animation:float 12s ease-in-out infinite;
+}
+
+.bg1{
+    width:250px;
+    height:250px;
+    background:#ffd6d6;
+    top:-50px;
+    left:-50px;
+}
+
+.bg2{
+    width:300px;
+    height:300px;
+    background:#ffe9c7;
+    bottom:-80px;
+    right:-50px;
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-25px);
+    }
+}
+
+/* Floating Petals */
+
+.petal{
+    position:absolute;
+    color:#d89ca4;
+    opacity:.7;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-100px) rotate(0deg);
+    }
+    to{
+        transform:translateY(110vh) rotate(360deg);
+    }
+}
+
+/* Card */
 
 .card{
-    width:100%;
-    max-width:760px;
-    background:#ffffff;
-    border-radius:28px;
+    width:90%;
+    max-width:780px;
+
+    background:rgba(255,255,255,.82);
+    backdrop-filter:blur(10px);
+
+    border-radius:30px;
     padding:55px 45px;
+
     text-align:center;
-    position:relative;
+
     box-shadow:
-    0 10px 40px rgba(0,0,0,0.08);
-    animation:fadeIn 1.2s ease;
+    0 20px 50px rgba(0,0,0,.08);
+
+    position:relative;
+    z-index:10;
+
+    animation:cardAppear 1.5s ease;
 }
 
-.corner{
-    position:absolute;
-    color:#d8a7a7;
-    font-size:28px;
-}
-
-.tl{top:18px;left:18px;}
-.tr{top:18px;right:18px;}
-.bl{bottom:18px;left:18px;}
-.br{bottom:18px;right:18px;}
-
-.icon-circle{
-    width:90px;
-    height:90px;
-    margin:0 auto 20px;
-    border-radius:50%;
-    background:#fdf0f0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.icon-circle i{
-    font-size:38px;
-    color:#b76e79;
-}
-
-.title{
-    font-family:'Great Vibes',cursive;
-    font-size:4rem;
-    color:#b76e79;
-    font-weight:400;
-}
-
-.name{
-    font-size:2rem;
-    color:#555;
-    margin-top:5px;
-    font-weight:500;
-}
-
-.date{
-    margin-top:15px;
-    color:#888;
-    letter-spacing:1px;
-    font-size:0.95rem;
-}
-
-.divider{
-    width:90px;
-    height:2px;
-    background:#e7c8c8;
-    margin:25px auto;
-}
-
-.message{
-    font-family:'Cormorant Garamond',serif;
-    font-size:1.45rem;
-    line-height:1.9;
-    color:#555;
-    max-width:580px;
-    margin:auto;
-}
-
-.highlight{
-    color:#b76e79;
-    font-weight:600;
-}
-
-.footer{
-    margin-top:35px;
-    color:#666;
-}
-
-.footer i{
-    color:#c86b85;
-    margin:0 4px;
-}
-
-.signature{
-    margin-top:12px;
-    color:#b76e79;
-    font-weight:600;
-}
-
-@keyframes fadeIn{
+@keyframes cardAppear{
     from{
         opacity:0;
-        transform:translateY(20px);
+        transform:translateY(30px);
     }
     to{
         opacity:1;
@@ -137,34 +114,148 @@ body{
     }
 }
 
+.icon-circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#fff2f4;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:auto;
+}
+
+.icon-circle i{
+    color:#b76e79;
+    font-size:38px;
+}
+
+/* Title */
+
+.title{
+    font-family:'Great Vibes',cursive;
+    font-size:4rem;
+    color:#b76e79;
+    margin-top:20px;
+}
+
+.name{
+    font-size:2rem;
+    color:#444;
+    margin-top:8px;
+}
+
+.date{
+    color:#888;
+    margin-top:12px;
+}
+
+/* Divider */
+
+.divider{
+    width:120px;
+    height:2px;
+    background:#e7c7c7;
+    margin:25px auto;
+}
+
+/* Message */
+
+.message{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.45rem;
+    line-height:1.9;
+    color:#555;
+}
+
+.highlight{
+    color:#b76e79;
+    font-weight:600;
+}
+
+/* Music Button */
+
+.music-btn{
+    margin-top:30px;
+
+    border:none;
+
+    background:#b76e79;
+    color:white;
+
+    padding:12px 24px;
+    border-radius:40px;
+
+    cursor:pointer;
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.music-btn:hover{
+    transform:translateY(-3px);
+}
+
+.footer{
+    margin-top:35px;
+    color:#666;
+}
+
+.signature{
+    margin-top:10px;
+    color:#b76e79;
+    font-weight:600;
+}
+
+/* Mobile */
+
 @media(max-width:768px){
 
-    .card{
-        padding:40px 25px;
-    }
-
-    .title{
-        font-size:3rem;
-    }
-
-    .name{
-        font-size:1.6rem;
-    }
-
-    .message{
-        font-size:1.2rem;
-    }
+.title{
+    font-size:3rem;
 }
+
+.name{
+    font-size:1.6rem;
+}
+
+.message{
+    font-size:1.2rem;
+}
+
+.card{
+    padding:40px 25px;
+}
+}
+
 </style>
 </head>
 <body>
 
-<div class="card">
+<div class="bg-circle bg1"></div>
+<div class="bg-circle bg2"></div>
 
-    <div class="corner tl"><i class="fa-solid fa-leaf"></i></div>
-    <div class="corner tr"><i class="fa-solid fa-leaf"></i></div>
-    <div class="corner bl"><i class="fa-solid fa-leaf"></i></div>
-    <div class="corner br"><i class="fa-solid fa-leaf"></i></div>
+<!-- Falling Petals -->
+<script>
+for(let i=0;i<20;i++){
+
+    const petal=document.createElement("div");
+
+    petal.className="petal";
+    petal.innerHTML="❀";
+
+    petal.style.left=Math.random()*100+"%";
+    petal.style.fontSize=(14+Math.random()*18)+"px";
+    petal.style.animationDuration=(8+Math.random()*8)+"s";
+    petal.style.animationDelay=Math.random()*5+"s";
+
+    document.body.appendChild(petal);
+}
+</script>
+
+<div class="card">
 
     <div class="icon-circle">
         <i class="fa-solid fa-heart"></i>
@@ -172,7 +263,7 @@ body{
 
     <h1 class="title">Happy Birthday</h1>
 
-    <div class="name">Mon</div>
+    <div class="name">Nazia Sheikh</div>
 
     <div class="date">
         <i class="fa-regular fa-calendar"></i>
@@ -182,34 +273,41 @@ body{
     <div class="divider"></div>
 
     <div class="message">
+
         Dear Mom,
-        <br><br>
-
-        Thank you for every prayer, every sacrifice, every lesson,
-        and every moment of love you have given throughout my life.
 
         <br><br>
 
-        Your kindness, patience, and strength have always been a source
-        of comfort and inspiration for our family.
+        Thank you for every prayer, every sacrifice,
+        every lesson, and every moment of unconditional love.
+
+        <br><br>
+
+        Your kindness, patience, and strength have made our family
+        stronger and our lives brighter.
 
         <br><br>
 
         <span class="highlight">
-            May Allah bless you with good health, happiness,
-            peace, and countless beautiful memories.
+        May Allah bless you with happiness, good health,
+        peace, and countless beautiful moments.
         </span>
 
         <br><br>
 
-        You are the heart of our home and one of the greatest blessings
-        in my life.
+        You are the heart of our home,
+        the warmth in our lives,
+        and one of the greatest blessings I could ever ask for.
+
     </div>
 
+    <button class="music-btn" onclick="toggleMusic()">
+        <i class="fa-solid fa-music"></i>
+        Play Music
+    </button>
+
     <div class="footer">
-        <i class="fa-solid fa-heart"></i>
-        With Love
-        <i class="fa-solid fa-heart"></i>
+        ❤️ With Love ❤️
 
         <div class="signature">
             Your Son
@@ -217,6 +315,32 @@ body{
     </div>
 
 </div>
+
+<!-- Replace the MP3 link below with your own music -->
+<audio id="music" loop>
+    <source src="birthday-music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const music=document.getElementById("music");
+const btn=document.querySelector(".music-btn");
+
+function toggleMusic(){
+
+    if(music.paused){
+
+        music.play();
+        btn.innerHTML='<i class="fa-solid fa-pause"></i> Pause Music';
+
+    }else{
+
+        music.pause();
+        btn.innerHTML='<i class="fa-solid fa-music"></i> Play Music';
+    }
+}
+
+</script>
 
 </body>
 </html>
